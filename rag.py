@@ -1,5 +1,5 @@
 import os
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.chains import RetrievalQA
@@ -41,3 +41,4 @@ def ask_question(query):
     )
 
     return qa.run(query)
+
